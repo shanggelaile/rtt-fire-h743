@@ -1,0 +1,265 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 53,
+              "Green": 41,
+              "Blue": 230
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId2",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Style": "Style4",
+            "Name": "buttonWithLabel1",
+            "X": 602,
+            "Y": 210,
+            "Width": 170,
+            "Height": 60,
+            "Type": "ButtonWithLabel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "rttpicture.png",
+            "Alpha": 255,
+            "Name": "image1",
+            "X": 102,
+            "Y": 159,
+            "Width": 420,
+            "Height": 162,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "buttonWithLabel1",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen2",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "Screen1",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId1",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Style": "Style4",
+            "Name": "buttonWithLabel1",
+            "X": 28,
+            "Y": 210,
+            "Width": 170,
+            "Height": 60,
+            "Type": "ButtonWithLabel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "FileNameBackground": "__designer\\Blue_Clocks_Backgrounds_clock_classic_background.png",
+            "RotationCenterX": 116,
+            "RotationCenterY": 116,
+            "UseAnimation": true,
+            "Duration": 15,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "ClockHands": [
+              {
+                "Type": "HourClockHand",
+                "FileNameHandImage": "__designer\\Blue_Clocks_Hands_clock_standard_hour_hand.png",
+                "RotationCenterX": 7,
+                "RotationCenterY": 52,
+                "HourHandMinuteCorrection": false
+              },
+              {
+                "Type": "MinuteClockHand",
+                "FileNameHandImage": "__designer\\Blue_Clocks_Hands_clock_standard_minute_hand.png",
+                "RotationCenterX": 7,
+                "RotationCenterY": 67,
+                "MinuteHandSecondCorrection": false
+              },
+              {
+                "Type": "SecondClockHand",
+                "FileNameHandImage": "__designer\\Blue_Clocks_Hands_clock_standard_second_hand.png",
+                "RotationCenterX": 3,
+                "RotationCenterY": 66
+              }
+            ],
+            "UseAmPm": false,
+            "InitialHour": 10,
+            "InitialMinute": 10,
+            "InitialSecond": 0,
+            "Name": "analogClock1",
+            "X": 389,
+            "Y": 119,
+            "Width": 233,
+            "Height": 243,
+            "Type": "AnalogClock",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "buttonWithLabel1",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Screen1",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "Screen2",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      }
+    ],
+    "Name": "CubeMX_Config",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../CubeMX_Config.ioc --platform=m7",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape"
+  },
+  "Version": "4.13.0"
+}
